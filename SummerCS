@@ -12,7 +12,6 @@
       color: #333;
       line-height: 1.6;
     }
-
     header {
       background: linear-gradient(135deg, #0077ff, #4a90e2);
       color: #fff;
@@ -24,8 +23,6 @@
       color: #fff; margin: 0 12px; text-decoration: none; font-weight: 600;
     }
     nav a:hover { text-decoration: underline; }
-
-    /* Hero */
     .hero {
       background: #eaf2fb;
       text-align: center;
@@ -44,8 +41,6 @@
       transition: background 0.3s ease;
     }
     .btn:hover { background: #005fcc; }
-
-    /* Sections */
     section { padding: 3rem 2rem; max-width: 1100px; margin: auto; }
     h2 { margin-bottom: 1.5rem; color: #0077ff; }
     .card-grid {
@@ -61,8 +56,6 @@
       transition: transform 0.2s ease;
     }
     .card:hover { transform: translateY(-5px); }
-
-    /* Table */
     table {
       width: 100%;
       border-collapse: collapse;
@@ -71,8 +64,6 @@
     table, th, td { border: 1px solid #ccc; }
     th, td { padding: 0.75rem; text-align: left; }
     th { background: #f0f0f0; }
-
-    /* Highlight Box */
     .highlight {
       background: #fff7e6;
       border-left: 5px solid #ff9800;
@@ -80,8 +71,6 @@
       border-radius: 6px;
       margin-top: 1rem;
     }
-
-    /* Interactive phrases */
     .phrases {
       display: flex;
       flex-wrap: wrap;
@@ -95,10 +84,7 @@
       transition: background 0.3s;
       cursor: pointer;
     }
-    .phrase:hover {
-      background: #d8eaff;
-    }
-
+    .phrase:hover { background: #d8eaff; }
     footer {
       background: #222;
       color: #fff;
@@ -107,7 +93,6 @@
       font-size: 0.9rem;
       margin-top: 2rem;
     }
-
     @media (max-width: 600px) {
       nav a { display: block; margin: 8px 0; }
     }
@@ -126,65 +111,70 @@
   </nav>
 </header>
 
-<!-- Hero -->
 <section id="home" class="hero">
   <h2>Decode the World Around You</h2>
   <p>CueClear helps autistic individuals interpret tone, slang, and gestures in real time — bridging the gap between intention and understanding.</p>
   <a href="#product" class="btn">Learn More</a>
 </section>
 
-<!-- Product Ideas -->
 <section id="product">
   <h2>Product Ideas</h2>
   <div class="card-grid">
     <div class="card">
       <h3>Social Cue Deciphering App</h3>
-      <p>AI-powered mobile app translating tone, sarcasm, slang, and gestures into plain language in real time.</p>
+      <p>An AI-powered mobile app that translates verbal and non-verbal social cues (tone, sarcasm, slang, gestures) into plain, literal language for autistic users in real time.</p>
     </div>
     <div class="card">
       <h3>Expression Analyzer Browser Extension</h3>
-      <p>Scans written content to flag idioms, irony, and undertones, offering simplified interpretations and context.</p>
+      <p>A browser plugin that scans written content (emails, chats, social media) and flags idioms, irony, and emotional undertones, offering simplified interpretations and context.</p>
     </div>
     <div class="card">
       <h3>Gesture-to-Meaning Companion</h3>
-      <p>Wearable or camera tool interpreting facial expressions, body language, and gestures during live interactions.</p>
+      <p>A wearable device or phone camera tool that interprets facial expressions, body language, and gestures during live interactions, providing discreet feedback to the user.</p>
     </div>
   </div>
 </section>
 
-<!-- Competitor Analysis -->
 <section id="competitors">
   <h2>Competitor Analysis</h2>
   <table>
-    <tr><th>Competitor</th><th>Features</th><th>Limitations</th></tr>
-    <tr><td>Sosh</td><td>Social training and exercises</td><td>No real-time interpretation or nuanced expression detection</td></tr>
-    <tr><td>My Talk Tools</td><td>Speech structure improvement</td><td>No tone detection or contextual decoding</td></tr>
+    <tr>
+      <th>Competitor</th>
+      <th>Features</th>
+      <th>Limitations</th>
+    </tr>
+    <tr>
+      <td>Sosh</td>
+      <td>Offers social training and exercises for autistic individuals.</td>
+      <td>Lacks real-time interpretation of social cues or nuanced expressions.</td>
+    </tr>
+    <tr>
+      <td>My Talk Tools</td>
+      <td>Helps form phrases and improve speech structure (syntax, semantics, pragmatics, morphology, and phonology).</td>
+      <td>Lacks emotional tone detection and contextual decoding of slang or irony.</td>
+    </tr>
   </table>
 </section>
 
-<!-- Features -->
 <section id="features">
   <h2>Core Features</h2>
   <h3>Must-Haves</h3>
   <ul>
-    <li>Real-time speech-to-text with tone analysis</li>
+    <li>Real-time speech-to-text translation with tone analysis</li>
     <li>Gesture and facial expression interpretation</li>
     <li>Slang and idiom dictionary with context</li>
   </ul>
-
   <h3>Nice-to-Haves</h3>
   <ul>
     <li>Customizable user profiles</li>
     <li>Conversation replay and breakdown</li>
     <li>Community feedback and shared interpretations</li>
   </ul>
-
   <div class="highlight">
-    <strong>Security Considerations:</strong> End-to-end encryption for voice data, GDPR-compliant handling, no data storage unless opted in.
+    <strong>Security Considerations:</strong> End-to-end encryption for voice data. No storage of personal conversations unless opted in. GDPR-compliant data handling and anonymization.
   </div>
 </section>
 
-<!-- Interactive Phrases -->
 <section>
   <h2>See CueClear in Action</h2>
   <div class="phrases">
@@ -194,10 +184,9 @@
   </div>
 </section>
 
-<!-- Contact -->
 <section id="contact">
   <h2>Contact</h2>
-  <p>Questions? Email us at <a href="mailto:info@example.com">info@example.com</a></p>
+  <p>Have questions? Email us at <a href="mailto:info@example.com">info@example.com</a>.</p>
 </section>
 
 <footer>
