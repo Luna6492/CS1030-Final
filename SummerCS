@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CueClear | Decode the World Around You</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Open Sans', Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0077ff, #4a90e2);
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    nav a {
+      color: #fff; margin: 0 12px; text-decoration: none; font-weight: 600;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    /* Hero */
+    .hero {
+      background: #eaf2fb;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero h2 { font-size: 2.5rem; margin-bottom: 1rem; color: #0077ff; }
+    .hero p { max-width: 600px; margin: auto; font-size: 1.1rem; margin-bottom: 1.5rem; }
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #0077ff;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .btn:hover { background: #005fcc; }
+
+    /* Sections */
+    section { padding: 3rem 2rem; max-width: 1100px; margin: auto; }
+    h2 { margin-bottom: 1.5rem; color: #0077ff; }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+    .card:hover { transform: translateY(-5px); }
+
+    /* Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    table, th, td { border: 1px solid #ccc; }
+    th, td { padding: 0.75rem; text-align: left; }
+    th { background: #f0f0f0; }
+
+    /* Highlight Box */
+    .highlight {
+      background: #fff7e6;
+      border-left: 5px solid #ff9800;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-top: 1rem;
+    }
+
+    /* Interactive phrases */
+    .phrases {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .phrase {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: background 0.3s;
+      cursor: pointer;
+    }
+    .phrase:hover {
+      background: #d8eaff;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      nav a { display: block; margin: 8px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>CueClear</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#product">Product Ideas</a>
+    <a href="#competitors">Competitors</a>
+    <a href="#features">Features</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <h2>Decode the World Around You</h2>
+  <p>CueClear helps autistic individuals interpret tone, slang, and gestures in real time — bridging the gap between intention and understanding.</p>
+  <a href="#product" class="btn">Learn More</a>
+</section>
+
+<!-- Product Ideas -->
+<section id="product">
+  <h2>Product Ideas</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Social Cue Deciphering App</h3>
+      <p>AI-powered mobile app translating tone, sarcasm, slang, and gestures into plain language in real time.</p>
+    </div>
+    <div class="card">
+      <h3>Expression Analyzer Browser Extension</h3>
+      <p>Scans written content to flag idioms, irony, and undertones, offering simplified interpretations and context.</p>
+    </div>
+    <div class="card">
+      <h3>Gesture-to-Meaning Companion</h3>
+      <p>Wearable or camera tool interpreting facial expressions, body language, and gestures during live interactions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Competitor Analysis -->
+<section id="competitors">
+  <h2>Competitor Analysis</h2>
+  <table>
+    <tr><th>Competitor</th><th>Features</th><th>Limitations</th></tr>
+    <tr><td>Sosh</td><td>Social training and exercises</td><td>No real-time interpretation or nuanced expression detection</td></tr>
+    <tr><td>My Talk Tools</td><td>Speech structure improvement</td><td>No tone detection or contextual decoding</td></tr>
+  </table>
+</section>
+
+<!-- Features -->
+<section id="features">
+  <h2>Core Features</h2>
+  <h3>Must-Haves</h3>
+  <ul>
+    <li>Real-time speech-to-text with tone analysis</li>
+    <li>Gesture and facial expression interpretation</li>
+    <li>Slang and idiom dictionary with context</li>
+  </ul>
+
+  <h3>Nice-to-Haves</h3>
+  <ul>
+    <li>Customizable user profiles</li>
+    <li>Conversation replay and breakdown</li>
+    <li>Community feedback and shared interpretations</li>
+  </ul>
+
+  <div class="highlight">
+    <strong>Security Considerations:</strong> End-to-end encryption for voice data, GDPR-compliant handling, no data storage unless opted in.
+  </div>
+</section>
+
+<!-- Interactive Phrases -->
+<section>
+  <h2>See CueClear in Action</h2>
+  <div class="phrases">
+    <div class="phrase" title="Literal meaning: It’s raining heavily">“It’s raining cats and dogs”</div>
+    <div class="phrase" title="Literal meaning: I’m very tired">“I’m dead tired”</div>
+    <div class="phrase" title="Literal meaning: I don’t believe you">“Yeah, right”</div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Questions? Email us at <a href="mailto:info@example.com">info@example.com</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2025 CueClear — Accessibility-Driven Communication Tools</p>
+</footer>
+
+</body>
+</html>
